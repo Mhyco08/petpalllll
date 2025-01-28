@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="Components/PETPAL LOGO.svg" alt="Logo" class="petpal">
+        <img src="Components/sign_upCat.png" alt="" class="cat">
+    </div>
+    <div class="login-container" id="signup">
+        <h1>Sign Up</h1>
+        <p>Create your Account</p>
+        <form id="login-form" method="post" action="register.php">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+
+            <input type="submit" class="btn" value="Sign Up" name="signUp">
+        </form>
+        <div class="signup-link">
+            Already have an Account? <button id="signInButton">Sign In</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
